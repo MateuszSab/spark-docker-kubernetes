@@ -25,7 +25,7 @@ docker / dockerfile := {
     add(jarFile, jarTarget)
     user("root")
     // On launch run Java with the classpath and the main class
-    entryPoint("/opt/spark/bin/spark-submit", "--conf", "spark.jars.ivy=/tmp/.ivy", jarTarget)
+//    entryPoint("/opt/spark/bin/spark-submit", "--conf", "spark.jars.ivy=/tmp/.ivy", jarTarget)
   }
 }
 

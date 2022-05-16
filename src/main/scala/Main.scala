@@ -6,7 +6,7 @@ object Main extends App {
   val spark = SparkSession
     .builder()
     .appName("Spark SQL basic example")
-//    .master("local[8088]")
+//    .master("local[*]")
     .getOrCreate()
 
   if (args.length < 1) {
